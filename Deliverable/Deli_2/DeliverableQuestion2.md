@@ -5,7 +5,7 @@ Course: CIS 106
 ---
 # Deliverable 2 Questions Answered!
 ##### Created by: Bryant Polanco
----
+
 ## What are the server hardware specifications (virtual machine settings)? Take a screenshot - don’t type it!
 ![Specifications](Screenshot/Systeminfo.png "SystemSpecs")
 ## What is Ubuntu server log in screen? Take screenshot - do not type it!
@@ -13,6 +13,7 @@ Course: CIS 106
 ## What is the IP address of your Ubuntu Server Virtual Machine?
 What is your Ubuntu-server Ip address:
 **Ip Address:** 192.168.4.72
+
 ## How do you enable the Ubuntu Firewall?
 **Enable** apache ubuntu ***firewall:***
 ```
