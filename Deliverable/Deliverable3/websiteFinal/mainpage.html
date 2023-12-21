@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Mabuntu Main Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+        
+        <!--Link from JS CALENDAR PLUGIN-->
+        <link rel='stylesheet' href="https://jsuites.net/v4/jsuites.css" type="text/css" />
+        
+        <!--Link CSS to HTML-->
+        <link rel='stylesheet' href="Css/allStyle.css">
+        <link rel='stylesheet' href="Css/MainPage.css">
+    </head>
+<body>
+    <header class= "titleCard">
+        <a href = "mainpage.html"><img src="LogoGif/MabuntuLogo.gif" alt="Computer man"></a>
+        <nav class ="links">
+            <ul><a href="FAQ.html">FAQ</a></ul>
+            <ul><a id = "AboutUs" href="AboutUs.html">About US</a></ul>
+            <ul><a href="Guide.html">Guide</a></ul>
+        </nav>
+    </header>
+        
+    <section class="mainBody">
+              <!--Public API - used to cycle Mabuntu photo with dogs--> 
+            <img class = "CenterImage" 
+            src="https://place.dog/300/200"alt = "MainPageImage"/>
+            <h2 id = "welcome">Welcome to Mabuntu</h2>
+            <section class = "credit">
+                <h3>Project created by:</h3>
+                <h4>&copy; Bryant F. Polanco</h4>
+            </section>
+        </section>
+    </section>
+    <hr>
+    <footer>
+        <section>
+        <h3>Want to create an account?</h3>
+        <h4>Date of account creation</h4>
+        <input id='calendar' />
+        </section>
+        <form id="signupForm" id = "animation-content" novalidate="novalidate" onsubmit="validateForm(event)"><!--novalidate disables password popup-->
+            <label for="Ename">Email Address:</label><br>
+            <input type="email" id="Ename" placeholder="CSSMaster@gmail.com" required>
+            <p id="emailError" style="color: lightgreen;"></p><!-- Error message for email -->
+            <br>
+            <label for="Pass">Password:</label><br>
+            <input type="password" id="Pass" placeholder="Don't use 'password'" required>
+            <p id="passwordError" style="color: lightgreen;"></p><!-- Error message for password -->
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    
+        <h3 id="Requirement">Requirements</h3>
+        <p id="require1">1. Password must be 4 characters minimum</p>
+        <p id="require2">2. Password must be contain special characters</p>
+    
+    <script src="https://jsuites.net/v4/jsuites.js"></script>
+    </footer>
+    <script src="JS/Footer.js"></script>
+    <!--Plugs JS Calendar JSfile
+     The calendar is used to enter the users creations information-->
+    <script src="JS/Footer2.js"></script>
+</body>
+</html>

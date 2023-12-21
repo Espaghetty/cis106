@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>FAQ and terms</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+   
+    <!--Link from JS CALENDAR PLUGIN-->
+    <link rel='stylesheet' href="https://jsuites.net/v4/jsuites.css" type="text/css" />    
+    
+    <!--Link CSS to HTML-->
+        <link rel='stylesheet' href="Css/allStyle.css">
+        <link rel='stylesheet' href="Css/FAQ.css">    
+    </head>
+    <body>
+        <header class= "titleCard">
+            <a href = "mainpage.html"><img src="LogoGif/MabuntuLogo.gif" alt="Computer man"></a>
+            <nav class ="links">
+                <ul><a href="mainpage.html">Return to home</a></ul>
+                <ul><a id = "AboutUs" href="AboutUs.html">About US</a></ul>
+                <ul><a href="Guide.html">Guide</a></ul>
+            </nav>
+        </header>
+   
+    <section class="topFAQ">
+        <h2 class = "FAQSubject">Return Policy</h2>
+        <p>All instructions are subject to change. Email: <b><a href ="bfpolanco@students.pccc.edu">bfpolanco@students.pccc.edu</a></b> for any issues.</p>
+        <h2 class = "FAQSubject">Shipping</h2>
+        <p>Allow 3-5 business days to process and ship orders.                                                                                                                   <b>Currently only shipping within US and somewhat Europe. Black Mesa is no longer a 
+        eligible shipping location nor is the Borealis of Aperture Science.</b> 
+        </p>
+        <h2 class = "FAQSubject">Website Liability</h2>
+        <p>By following the instructions given to you on the guide page. <b>You understand</b> that I am not responsible for any possible damages or corruption of your laptop's Operating System.</p>
+        <h2 class = "FAQSubject">Inspirations</h2>
+        <p>
+            Sites which inspired the layout for most of my webpage 
+            is <a href = "https://yourlocalmomandpop.com/">YourLocalMomAndPop.com</a>
+        </p>
+    </section>
+</body>
+<footer>
+    <section>
+    <h3>Want to create an account?</h3>
+    <h4>Date of account creation</h4>
+    <input id='calendar' />
+    </section>
+    <form id="signupForm" id = "animation-content" novalidate="novalidate" onsubmit="validateForm(event)"><!--novalidate disables password popup-->
+        <label for="Ename">Email Address:</label><br>
+        <input type="email" id="Ename" placeholder="CSSMaster@gmail.com" required>
+        <p id="emailError" style="color: lightgreen;"></p><!-- Error message for email -->
+        <br>
+        <label for="Pass">Password:</label><br>
+        <input type="password" id="Pass" placeholder="Don't use 'password'" required>
+        <p id="passwordError" style="color: lightgreen;"></p><!-- Error message for password -->
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h3 id="Requirement">Requirements</h3>
+    <p id="require1">1. Password must be 4 characters minimum</p>
+    <p id="require2">2. Password must be contain special characters</p>
+
+<script src="https://jsuites.net/v4/jsuites.js"></script>
+</footer>
+<script src="JS/Footer.js"></script>
+<!--Plugs JS Calendar JSfile
+ The calendar is used to enter the users creations information-->
+<script src="JS/Footer2.js"></script>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Creating Your UTM VM</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<!--Link from JS CALENDAR PLUGIN-->
+<link rel='stylesheet' href="https://jsuites.net/v4/jsuites.css" type="text/css" />
+
+<link rel='stylesheet' href="Css/allStyle.css">
+<link rel='stylesheet' href="Css/Guide.css">
+</head>
+<body>
+    <header class= "titleCard">
+        <a href = "mainpage.html"><img src="LogoGif/MabuntuLogo.gif" alt="Computer man"></a>
+        <nav class ="links">
+            <ul><a href="FAQ.html">FAQ</a></ul>
+            <ul><a id = "AboutUs" href="AboutUs.html">About US</a></ul>
+            <ul><a href="mainpage.html">Return to home</a></ul>
+        </nav>
+    </header>
+    <main>
+        <article class = "Instruction1">
+            <h2 class="sectionTitle">1. Installing UTM</h2>
+            <img src="imgFile/MacOS Ubuntu steps/7.png" alt="Step2">
+            <p>Installing UTM is pretty straight forward, you can find the software here.</p>
+        </article>
+        <article class  = " Instruction2">
+            <h2 class="sectionTitle">2. Downloading the OS Image</h2>
+            
+        
+            <p>You have to download the Ubuntu server version, don't worry we can easily install GUI after installing the barebone OS. Download Ubuntu.</p>
+        
+            <p>Please verify you are downloading the ARM version of the software</p>
+        
+            <p>The steps to install are mentioned on the bottom of the UTM ubuntu webpage. They usually autofill the storage allocation as 64gigs, I would recommend making it to 20gigs as it is more than enough, but feel free to change it according to your use case.</p>
+        
+            <p>You may also want to specify any required features (e.g. check Docker option for installing docker on ubuntu) as part of the installation, however, these features can also be added later.</p>
+        </article>
+        <article class = "Instruction3">
+            <h2 class="sectionTitle">3. Possible Install issues</h2>
+                <p>Problems with Booting into Ubuntu Due to a recent update in the Linux version, some might find it hard to boot into Ubuntu. You can bypass this problem by doing the following steps in the UTM options menu, located at the top right corner of the application.</p>
+            <ol>
+                <li>Disabling the QEMU &gt; use hypervisor option</li>
+                <li>Changing the display type to Console only</li>
+                <li>Boot into Linux, but it will be VERY slow because it is using emulation instead of virtualization.</li>
+                <li>Once inside, install the last version of Linux sudo apt install linux-image-5.4.0-100-generic</li>
+                <li>Shut down the VM, open VM settings and under QEMU -&gt; Teaks, check &quot;Use Hypervisor&quot; to re-enable virtualization.    </li>
+                <li>Start the VM and when the UTM logo shows up, hold &quot;Shift&quot; to enter the GRUB menu</li>
+                <li>Select &quot;Advanced Options for Ubuntu&quot;</li>
+                <li>Select &quot;Ubuntu, with Linux 5.4.0-100-generic&quot; (or anything lower than 5.4.0-104)</li>
+                <li>You can now boot into Ubuntu again. You may choose to uninstall 5.4.0-104 and temporarily mask it from being updated in the future: sudo apt-mark hold linux-image-$(uname -r)</li>
+            </ol>
+        </article>
+        <article class = "warning">
+                <p><strong>Problems with internet connectivity</strong> There is a solution in the bottom of the UTM page for Ubuntu, for this issue.</p>
+        </article>
+    </main>
+    <footer>
+        <section>
+        <h3>Want to create an account?</h3>
+        <h4>Date of account creation</h4>
+        <input id='calendar' />
+        </section>
+        <form id="signupForm" id = "animation-content" novalidate="novalidate" onsubmit="validateForm(event)"><!--novalidate disables password popup-->
+            <label for="Ename">Email Address:</label><br>
+            <input type="email" id="Ename" placeholder="CSSMaster@gmail.com" required>
+            <p id="emailError" style="color: lightgreen;"></p><!-- Error message for email -->
+            <br>
+            <label for="Pass">Password:</label><br>
+            <input type="password" id="Pass" placeholder="Don't use 'password'" required>
+            <p id="passwordError" style="color: lightgreen;"></p><!-- Error message for password -->
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    
+        <h3 id="Requirement">Requirements</h3>
+        <p id="require1">1. Password must be 4 characters minimum</p>
+        <p id="require2">2. Password must be contain special characters</p>
+    
+    <script src="https://jsuites.net/v4/jsuites.js"></script>
+    </footer>
+    <script src="JS/Footer.js"></script>
+    <!--Plugs JS Calendar JSfile
+     The calendar is used to enter the users creations information-->
+    <script src="JS/Footer2.js"></script>
+</body>
+</body>
+</html>

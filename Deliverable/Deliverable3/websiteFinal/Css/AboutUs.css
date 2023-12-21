@@ -1,0 +1,77 @@
+body
+{
+    background-color: whitesmoke;
+}
+main
+{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows:auto;
+    margin: 5%;
+}
+#staffLabel
+{
+    grid-column: 1/4;
+    text-align: center;
+    font-size: 5rem;
+    color: darkgreen;
+    padding-bottom: 2rem;
+}
+.staffDesc
+{
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: .01rem;
+    border: 5px solid green;
+    background-color: lightgrey;
+    margin: 2rem;
+    background-color: gainsboro;
+}
+main img
+{
+    max-width: 500px;
+    max-height: 500px;
+    height: auto;
+    width: auto;
+    border: 5px solid green;
+}
+.Bryant
+{
+    text-align: center;
+    grid-row: 2/3;
+}
+.Nadia
+{
+    text-align: center;
+    grid-row: 2/3;
+}
+.Zues
+{
+    text-align: center;
+    grid-row: 2/3;
+}
+
+#storyLabel
+{
+    padding-top: 6rem;
+    grid-row: 3/4;
+    grid-column: 2/3;
+    text-align: center;
+    font-size: 2rem;
+    color: green;
+}
+#Story
+{
+    grid-row:4/5;
+    grid-column: 1/4;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 25px;
+    border: 10px solid green;
+    background-color: lightgrey;
+}
+#copyright
+{
+    grid-row: 6;
+    grid-column: 1/2;
+}
